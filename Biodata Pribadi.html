@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <style>
+        label {
+            display:inline-block;
+            width: 60px;
+            margin-bottom: 10px;
+        }
+        .titik {
+            width: 40px;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+    <title>Form Biodata</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Biodata Pribadi</legend>
+        <label for="name">Nama </label>
+        <label class="titik">:</label>
+        <input type="text" value="" placeholde="Nama Lengkap"><br><br>
+        <label for="ALAMAT">Alamat</label>
+        <label class="titik">:</label>
+        <textarea type="text" id="ALAMAT" value="" placeholder="Masukkan Alamat Anda"></textarea><br><br>
+        <label for="TTL">TTL</label>
+        <label class="titik">:</label>
+        <input type="text" value="" placeholder="Tempat Lahir">
+        <input type="date"><br><br>
+        <label for="Kelamin">Jenis Kelamin</label>
+        <label class="titik">:</label>
+        <input type="radio">Laki-Laki <input type="radio">Perempuan <br><br>
+        <label for="agama">Agama</label>
+        <label class="titik">:</label>
+        <select style="background-color: azure;" id="Agama" name="Agama" form="Agama form">
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Budha">Budha</option>
+            <option value="Konghucu">Konghucu</option>
+        </select><br><br>
+        <label for="Hobby">Hobby</label>
+        <label class="titik">:</label>
+        <input type="checkbox">Lari
+        <input type="checkbox">Berenang
+        <input type="checkbox">Futsal
+        <input type="checkbox">Musik
+        <input type="checkbox">Memancing<br><br>
+        <label for="Motto">Motto</label>
+        <label class="titik">:</label>
+        <textarea type="text" value="" planceholder="isikan motto anda disini"></textarea><br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Simpan"
+    </fieldset>
+</body>
