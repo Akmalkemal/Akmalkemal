@@ -1,0 +1,98 @@
+/* tangerine font */
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,700');
+
+@keyframes fadeInDown {
+  0% {
+    opacity: .8;
+    transform: translateY(5px);
+  }
+  
+  25% {
+    opacity: .9;
+    transform: translateY(15px);
+  }
+  
+  50% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  
+  75% {
+    opacity: 1;
+    transform: translateY(15px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 85;
+}
+
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.underwater {
+  position: relative;
+  min-height: 600px;
+  background-color: #4fc3da;
+}
+
+
+.submarine {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    background: url("http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/03/little-submarine.svg") no-repeat;
+  }
+  .moving-content {
+    font-family: 'Raleway', sans-serif;
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    color: black;
+    font-size: large;
+  }
+  .moving-content h2 {
+    color: #4d275f;
+  }
+  
+  .wave{
+    background-color: #afdee8;
+    height: 50px;
+    position: relative;
+  }
+  .wave::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 20px 20px;
+    background-image:
+      radial-gradient(circle at 10px -5px, transparent 12px, #4fc3da 13px);
+  }
+  .wave::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 15px;
+    background-size: 80px 20px;
+    background-image:
+      radial-gradient(circle at 30px 15px, #4fc3da 12px, transparent 13px);
+  }
